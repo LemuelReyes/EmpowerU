@@ -452,7 +452,7 @@ template {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
+	background-color: white;
 	color: black;
 	font-size: 16px;
 	margin: 0;
@@ -469,9 +469,36 @@ ul {
 }
 
 a {
-	color: black;
+	color: white;
 	text-decoration: none;
 }
+
+.section--container {
+      height: 75vh;
+      width: 100%;
+  }
+
+.section--background-dark {
+      background-color: rgba(0,0,0,0.8);
+      color: white;
+  }
+
+.section--title {
+      -ms-flex-item-align: center;
+          align-self: center;
+      border-bottom: 1px solid black;
+  }
+
+.section--title-white {
+      -ms-flex-item-align: center;
+          align-self: center;
+      border-bottom: 1px solid white;
+  }
+
+.section--paragraph {
+      margin: 0rem 1.5rem;
+      line-height: 1.5rem;
+  }
 
 .flex-center {
   display: -webkit-box;
@@ -480,30 +507,11 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
-.section--container {
-    height: 75vh;
-    width: 100%;
-  }
-
-.section--title {
-    -ms-flex-item-align: center;
-        align-self: center;
-    border-bottom: 1px solid black;
-  }
-
-.section--paragraph {
-    margin: 0rem 1.5rem;
-    line-height: 1.5rem;
-  }
 
 /* to use, here is the syntax
 @mixin atSmall {
@@ -536,12 +544,12 @@ font-size: 4.8rem;
   }
 
 .hero--title {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
   }
 
 .hero--sub-title {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
   }
 
@@ -569,11 +577,8 @@ font-size: 4.8rem;
 
 }
 
-.who-we-are-container {
-  background-color: rgba(0,0,0,0.9);
-  color: white;
+.who-we-are {
 }
 
-.who-we-are-container h1 {
-    border-bottom: 1px solid white;
-  }
+.contact-container {
+}

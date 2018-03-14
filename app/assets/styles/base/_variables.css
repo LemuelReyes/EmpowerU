@@ -1,0 +1,28 @@
+.section {
+  &--container {
+      height: 75vh;
+      width: 100%;
+  }
+  &--background-dark {
+      background-color: rgba(0,0,0,0.8);
+      color: white;
+  }
+  &--title {
+      align-self: center;
+      border-bottom: 1px solid black;
+  }
+  &--title-white {
+      align-self: center;
+      border-bottom: 1px solid white;
+  }
+  &--paragraph {
+      margin: 0rem 1.5rem;
+      line-height: 1.5rem;
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
