@@ -1,0 +1,26 @@
+$mainGray: #000000;
+
+.flex-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section {
+
+  &--container {
+    height: 75vh;
+    width: 100%;
+  }
+
+  &--title {
+    align-self: center;
+    border-bottom: 1px solid black;
+  }
+
+  &--paragraph {
+    margin: 0rem 1.5rem;
+    line-height: 1.5rem;
+  }
+}
